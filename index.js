@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-const port = 3000;
+
 
 const cors = require('cors');
 const user = require('./routes/user.route');
@@ -45,6 +45,4 @@ app.use('/api-docs',
 )
 
 
-app.listen(port, () => {
-    console.log('Listening to port 3000');
-})
+module.exports = app;
